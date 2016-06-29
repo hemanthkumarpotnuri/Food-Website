@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel=stylesheet type="text/css" href="resources/css/style.css">
+        <link rel=stylesheet type="text/css" href="resources/css/queries.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
         <title>Food Project</title>
     </head>
@@ -13,6 +15,7 @@
            <nav>
                <div class="row">
                    <img src="resources/images/logo-white.png" alt="food-logo" class="logo">
+                   <img src="resources/images/logo.png" alt="food-logo" class="logo-black">
                    <ul class="main-nav">
                        <li><a href="#">Food delivery</a></li>
                        <li><a href="#">How it works</a></li>
@@ -27,7 +30,7 @@
                <a class="btn btn-ghost" href="#">Show me more</a>    
            </div>
         </header>
-        <section class="section-features">
+        <section class="section-features js--section-features">
             <div class="row">
                 
                 <h2>Get food fast &mdash; not fast food.</h2>
@@ -318,8 +321,97 @@
                     </div>
                 </div>
             </div>
-            
         </section>
+        <section class="section-from">
+            <div class="row">
+                <h2> We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="name" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search" se>Search Engine</option>
+                                <option value="advertisement">Advertisement</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="news">Newsletter</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                           <input type="checkbox" name="news" id="news" checked>Yes, please
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="message">Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                           <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                           <input type=submit value="Send it!" i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#" class="ion-social-facebook"></a></li>
+                        <li><a href="#" class="ion-social-twitter"></a></li>
+                        <li><a href="#" class="ion-social-googleplus"></a></li>
+                        <li><a href="#" class="ion-social-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2016 by Omnifood. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
     </body>
 </html>
-
